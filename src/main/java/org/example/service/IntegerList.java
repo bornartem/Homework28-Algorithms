@@ -1,10 +1,10 @@
 package org.example.service;
 
-public interface StringList {
+public interface IntegerList {
     // Добавление элемента.
-        // Вернуть добавленный элемент
-        // в качестве результата выполнения.
-    String add(String item);
+    // Вернуть добавленный элемент
+    // в качестве результата выполнения.
+    Integer add(Integer item);
 
     // Добавление элемента
     // на определенную позицию списка.
@@ -13,36 +13,36 @@ public interface StringList {
     // выбросить исключение.
     // Вернуть добавленный элемент
     // в качестве результата выполнения.
-    String add(int index, String item);
+    Integer add(int index, Integer item);
 
-    String set(int index, String item);
+    Integer set(int index, Integer item);
 
     // Удаление элемента.
     // Вернуть удаленный элемент
     // или исключение, если подобный
     // элемент отсутствует в списке.
-    String remove(String item);
+    Integer remove(Integer item);
 
-    String remove(int index);
+    Integer remove(int index);
 
-    boolean contains(String item);
+    boolean contains(Integer item);
 
     // Поиск элемента.
     // Вернуть индекс элемента
     // или -1 в случае отсутствия.
-    int indexOf(String item);
+    int indexOf(Integer item);
 
     // Поиск элемента с конца.
     // Вернуть индекс элемента
     // или -1 в случае отсутствия.
-    int lastIndexOf(String item);
+    int lastIndexOf(Integer item);
 
-    String get(int index);
+    Integer get(int index);
 
     // Сравнить текущий список с другим.
     // Вернуть true/false или исключение,
     // если передан null.
-    boolean equals(StringList otherList);
+    boolean equals(IntegerList otherList);
 
     // Вернуть фактическое количество элементов.
     int size();
@@ -58,5 +58,5 @@ public interface StringList {
     // Создать новый массив
     // из строк в списке
     // и вернуть его.
-    String[] toArray();
+    Integer[] toArray();
 }
